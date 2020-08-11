@@ -1,0 +1,47 @@
+(function(utils) {
+  utils.waitUntil(function () {
+    return (typeof window.jQuery === 'function');
+  }).then(function () {
+    var $ = window.jQuery;
+
+    utils.waitForElement("#footer").then(function() {
+      
+      var phone_number = $('.navBar-phoneNumber').text();
+      var city = $('.locationCenterTitle span[itemprop="name"]').text();
+      var also_serving = "";
+      if ($('.also-serving-text').length > 0) 
+        also_serving = "Also serving "+ $('.also-serving-text')[0].innerHTML;
+      
+      var map_address = $('.locationAddressContainer').html();
+      var hours_of_operation = $('.locationHoursContainer ul').html();
+
+      // remove current big hero
+      $('.homePageMadLibs').remove();
+      
+
+      // add new hero element
+      $('#header').prepend('<div class="opt-new-hero"> <div class="wrapper"> <div class="opt-header desktop"> <h1>Now offering online and in-center tutoring at Sylvan Learning of '+ city +'</h1> <p>Give your child the personal attention and motivation they need to reach their full potential.</p> <ul> <li>Highly customized learning plans</li> <li>Expert, certified teachers (also online!)</li> <li>Structured support to keep the learning going</li> </ul> </div> <div class="opt-header mobile"> <h2>Contact your local Sylvan today!</h2> </div> <div class="opt-three-columns"> <div class="column map-and-time"> <div class="map"><div class="address">'+ map_address +'</div> <div class="map-embed"></div></div> <div class="time"> <div class="locationHoursContainer" itemscope="" itemtype="http://schema.org/openingHours"><h3 class="time">Call <a href="tel:'+ phone_number +'">'+ phone_number +'</a></h3> <ul>'+ hours_of_operation +'</ul> </div> </div> </div> <div class="column description"> <p><strong>'+ also_serving +'</strong></p> <p>Helping your child reach his or her academic potential has likely been a <strong>challenge over these last few months</strong>.</p> <p>You’ve had to adapt, and so have we. That’s why we are now open for both <strong>online</strong> and <strong>in-person instruction</strong>—whatever is right for your family.</p><p>You can get the same, high-quality, proven education we’ve always had in our centers now also through live, online tutoring. If you would prefer face-to-face support, <a href="/live-online-tutoring/#covid">click here</a> to learn more about how we are following locally-mandated guidelines to ensure the safety of your child.</p><p>No matter what your family’s needs are, the team at Sylvan Learning of '+ city +' can guide your child to success. <strong>Get ready for big results - and smiles!</strong></p></div> <div class="column form"> <div class="opt-form-title"> <h1>Sounds good!</h1> <h2>Tell me more.</h2> </div> <p>Call us at <strong><a href="tel:'+ phone_number +'">'+ phone_number +'</a></strong> or fill out this form. We\'ll contact you shortly to discuss your needs and ways to achieve your goals.</p> <div class="homeContactForm contactForm"> <label class="half">* Parent’s First Name<input class="homeContactInputHalfSize " id="Fname" name="first name"  value=""> </label> <label class="half">* Parent’s Last Name<input class="homeContactInputHalfSize rightColInput" id="Lname" name="last name"  value=""></label> <label>* Street Address<input class="homeContactInputFullSize" id="address" name="street"  value=""></label> <label>* Email<input type="email" id="email" class="homeContactInputFullSize" name="email" value=""> </label><label class="half">* Postal Code<input type="text" name="postalCode" class="homeContactInputHalfSize postalCode" value=""> </label><label class="half">* Phone Number<input type="phone" id="phone" class="homeContactInputHalfSize rightColInput" name="phone" value=""></label> <label>Questions / Comments<textarea name="message" class="homeContactInputFullSize"maxlength="2048"></textarea></label> <div class="homeContactSubmitContainer"> <span class="requiredField">* Required Field</span> <div class="sendButton">   <div class="buttonType"> <span class="submitContactForm"> let\'s get started </span>  </div> </div> </div> </div> </div> </div> </div> </div>');
+      
+      // copy the map
+      $('.centerInfoMap').clone().appendTo('.map-embed');
+
+      // remove info container at bottom
+      $('.locationInfoContainer').remove();
+      
+      // restart contact form
+      var contactForm = new FormUtils($('.homeContactForm'), {'bindFormEvents': true});
+
+      });
+    });
+  
+    
+  
+  
+})(window.optimizely.get("utils"));
+
+var utils = window.optimizely.get('utils');
+
+utils.waitForElement("div.opt-new-hero > div.wrapper > div.opt-three-columns > div.column.description > p > a").then(function(el){
+ // console.log("found element");
+  document.querySelector("div.opt-new-hero > div.wrapper > div.opt-three-columns > div.column.description > p > a").href = window.location.pathname+"/live-online-tutoring/#covid";
+});
