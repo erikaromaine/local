@@ -1,0 +1,593 @@
+.navContainer { background-color: #242e83 !important; }
+
+.navContainer .navBar { background-color: #242e83; }
+
+.navContainer .navBar-mainLink a { color: #FFF; }
+
+.navContainer .navBar-mainLink:hover a { color: #929eec; }
+
+.navContainer .navBar-phoneContainer .navBar-phoneContent { color: #929eec; }  
+
+.homePageContainedr .homeContact { display:none; }
+
+.opt-new-hero {
+  width: 100%;
+  background: url('https://www.sylvanlearning.com/images/default-source/default-album/tutoring-services-desk.png') no-repeat center -15px;
+  /* background-size: 105%; */ 
+  height: 365px;
+}
+
+.opt-new-hero .wrapper {
+  max-width: 960px;
+  margin-top: 85px;
+}
+
+.opt-header {
+  color: #FFF;
+  padding-top: 30px;
+  width: 430px;
+  margin-bottom: 80px;
+  min-height: 290px;
+}
+
+.opt-header p {
+  color:#FFF;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.opt-header h1 {
+  text-transform: none;
+  font-family: "proxima-nova", arial, sans-serif;
+  font-weight: bolder;
+  font-size: 2.0em;
+  letter-spacing: .030em;
+}
+
+.opt-three-columns .column {
+  float: left; 
+  margin-bottom: 3rem;
+}
+
+.column.map-and-time { width: 27%; }
+
+.column.map-and-time .map-embed { height: 205px; }
+
+.column.map-and-time .map .locationInfoMap {
+  width: 260px;
+  height: 195px;
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+
+.place-card-medium, 
+.desktopPhoneNumber { display:none; }
+
+.column.map-and-time ul { padding-left: 10px; }
+
+h3.time,
+h3.time  a { 
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.column.map-and-time .sylvanSubhead { 
+  text-transform:inherit; 
+  font-size: 15px; 
+  font-weight:normal; 
+  width: 50px; 
+  display:inline-block;
+ }
+
+.column.map-and-time .locationHourTitle { display:none; }
+
+.column.description {
+  width: 38%;
+  margin-left: 20px;
+  border-left: 2px solid #d6d6d6;
+  padding: 0 20px;
+  height: 520px;
+}
+
+.column.description p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.column.form {
+  background-color: rgba(189, 225, 255, 0.8);
+  width: 32%;
+  margin-top: -280px;
+  border-radius: 0 0 15px 15px;
+}
+
+.opt-form-title {
+  background-color: #252e82;
+  color: #FFF;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  padding-bottom: 1px;
+  margin-top: -10px;
+}
+
+.opt-form-title h1 {
+  margin: 0;
+  padding: 15px 0 0;
+  letter-spacing: .030em;
+  font-family: 'sylvanhwscript1.0regular';
+  font-size: 21pt;
+  font-weight: 100;
+  letter-spacing: 0.07em;
+}
+
+.opt-form-title h2 {
+  margin-top: 0;
+  font-family: 'luellablack';
+  font-weight: bolder;
+  font-size: 2.6em;
+  letter-spacing: .030em;
+}
+
+.opt-form-title p {
+  text-align: center;
+}
+
+.column.form p {
+  padding: 10px 16px 0;
+  text-align: center;
+  color: #3a3c3d;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.column.form .contactForm { padding: 20px; }
+
+.opt-header ul {
+  padding-left: 0;
+  font-size: 14px;
+}
+
+.opt-header ul li {padding-left: 26px;position: relative;}
+
+.opt-header ul li:before {
+  content: "";
+  background-image: url('https://www.sylvanlearning.com/images/default-source/default-album/hero-checkmark.png');
+  position: absolute;
+  background-size: 13px 13px;
+  left: 0;
+  height: 13px;
+  width: 13px;
+  background-repeat: no-repeat;
+  display: block;
+  top: 5px;
+}
+
+.opt-new-hero .contactForm .submitContactForm {
+  cursor: pointer;
+  display: block;
+  width: 88%;
+  border-radius: 50px;
+  background: -moz-linear-gradient(top, #fa4d82 0%, #ec062a 100%);
+  /* FF3.6-15 */
+  background: #fa4d82 url(https://www.sylvanlearning.com/images/default-source/default-album/whitearrow.png) no-repeat 95% 50%;
+  background-image: url(https://www.sylvanlearning.com/images/default-source/default-album/whitearrow.png),linear-gradient(to bottom, #fa4d82 0%,#ec062a 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-image: url(https://www.sylvanlearning.com/images/default-source/default-album/whitearrow.png),-webkit-linear-gradient(top, #fa4d82 0%,#ec062a 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  box-shadow: 0px 2px 3px #bbb;
+  border-radius: 30px;
+  outline: none;
+  color: #fff;
+  font-size: 3rem;
+  margin: 18px auto;
+  padding: .85rem 3rem .825rem 1rem;
+  text-align: center;
+  height: 47px;
+}
+
+.navFindALocationContainer {
+  width: 150px;
+  min-width: 150px;
+  max-width: 150px;
+  margin-right: 10px;
+}
+
+.navFindALocationContainer .sylvanSubhead {
+  color: #828ddd;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.navFindALocationContainer .navFALCInputContainer {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 2px solid #222d84;
+}
+
+.navFindALocationContainer .navFALCInputContainer {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 2px solid #222d84;
+}
+
+.navFindALocationContainer .navFALCInputContainer .navFALCInput {
+  max-width: 150px;
+  min-width: 0;
+  width: 74%;
+  height: 30px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  color: #222d84;
+  border: none;
+  border-radius: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navFindALocationContainer .navFALCInputContainer .navFALCInput::-webkit-input-placeholder {
+  color: #222d84;
+  font-family: "proxima-nova", arial, sans-serif;
+  font-size: 7.5pt;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  opacity: 1;
+}
+
+.navFindALocationContainer .navFALCInputContainer .navFALCInput:-ms-input-placeholder {
+  color: #222d84;
+  font-family: "proxima-nova", arial, sans-serif;
+  font-size: 7.5pt;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  opacity: 1;
+}
+
+.navFindALocationContainer .navFALCInputContainer .navFALCInput::-ms-input-placeholder {
+  color: #222d84;
+  font-family: "proxima-nova", arial, sans-serif;
+  font-size: 7.5pt;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  opacity: 1;
+}
+
+.navFindALocationContainer .navFALCInputContainer .navFALCInput::placeholder {
+  color: #222d84;
+  font-family: "proxima-nova", arial, sans-serif;
+  font-size: 7.5pt;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  opacity: 1;
+}
+#header {
+  background: linear-gradient(to bottom, #d4edff 75%,#ffffff 46em);
+  padding-bottom: 30rem;
+}
+
+#header .navFindALocationContainer .navFALCInputContainer .navFALCInput:focus::-webkit-input-placeholder, 
+#header .navFindALocationContainer .navFALCInputContainer .navFALCInput:focus:-ms-input-placeholder,
+#header .navFindALocationContainer .navFALCInputContainer .navFALCInput:focus::-ms-input-placeholder,
+#header .navFindALocationContainer .navFALCInputContainer .navFALCInput:focus::placeholder,
+#header .navFindALocationContainer .navFALCInputContainer .navFALCInput:focus::-moz-placeholder 
+{
+  color: transparent !important;
+}
+
+.navFindALocationContainer .navFALCInputContainer .navFALCInput::-moz-placeholder {
+  color: #222d84;
+  font-family: "proxima-nova", arial, sans-serif;
+  font-size: 7.5pt;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  opacity: 1;
+}
+
+.navFindALocationContainer .navFALCInputContainer .navFALCInput:-ms-input-placeholder {
+  color: #222d84;
+  font-family: "proxima-nova", arial, sans-serif;
+  font-size: 7.5pt;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.navFindALocationContainer .navFALCInputContainer .navFALCInput:focus:-ms-input-placeholder {
+  color: transparent !important;
+}
+
+.navFindALocationContainer .navFALCInputContainer .navFALCInput::-ms-input-placeholder {
+  color: #222d84;
+  font-family: "proxima-nova", arial, sans-serif;
+  font-size: 7.5pt;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.navFindALocationContainer .navFALCInputContainer .navFALCInput:focus::-ms-input-placeholder {
+  color: transparent !important;
+}
+
+.navFindALocationContainer .navFALCInputContainer .navFALCInputArrow {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  width: 17px;
+  height: 30px;
+  background: #909BE3;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.navFindALocationContainer .navFALCInputContainer .navFALCInputArrow:hover {
+  cursor: pointer;
+}
+
+.navFindALocationContainer .navFALCInputContainer .navFALCInputArrow .arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #909BE3;
+  border-left-color: #232483;
+}
+
+.homeContactFormAside .homePageContactFormAsideContent {
+  font-size: 23px;
+  color: #454545;
+  margin-bottom: 20px;
+  font-weight: 300; 
+}
+.homeContactFormAside .homePageContactFormAsideContent a {
+  font-weight: 600;
+  color: #612485; 
+}
+
+.homeContactFormAside .homePageContactFormAsideLocationInfo {
+  font-size: 15px;
+  color: #454545; 
+}
+
+.homeContactForm {
+  min-width: 100%;
+  max-width: 100%;
+  padding: 30px;
+  position: relative; 
+}
+
+.homeContactForm label { 
+  color: #787d7f; 
+  width: 100%; 
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.homeContactForm label.half {
+	width: 49%;
+  display : inline-block;
+}
+
+.homeContactForm input, .homeContactForm textarea {
+  height: 35px;
+  width: 95%;
+  padding: 5px;
+  color: #767778;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #fff;
+  border: none;
+  margin-top: 5px;
+}
+
+.homeContactForm textarea { height: 70px; }
+
+.homeContactForm input#email { margin-bottom: 0; }
+
+.homeContactInputFullSize { width:100%; }
+
+.homeContactForm input::-webkit-input-placeholder,  
+.homeContactForm textarea::-webkit-input-placeholder,
+.homeContactForm input:-ms-input-placeholder,
+.homeContactForm textarea:-ms-input-placeholder,
+.homeContactForm input::placeholder,
+.homeContactForm textarea::placeholder {
+  color: #612485; 
+}
+
+.address {
+  background: #d5edff url(https://www.sylvanlearning.com/Sitefinity/WebsiteTemplates/SLTheme/App_Themes/SLTheme/images/starIcon.png) no-repeat scroll 10px center;
+  padding: 15px 15px 0 45px;
+  font-weight: 500;
+  font-family: "proxima-nova", arial, sans-serif;
+  color: #303030;
+  margin-top: -10px;
+  font-size: 16px;
+}
+
+.opt-header.mobile { display: none; }
+
+/* mobile */
+
+@media (max-width: 767px) { 
+  .wf-subnav {
+    
+    position: absolute;
+  }
+  #header {
+    background: #FFF;
+    padding-bottom: 0;
+  }
+
+  .opt-new-hero { 
+    height: auto;
+    margin-top: 100px;
+    background:none;
+    width: 100%;
+
+    background-color: #cbe7ff;
+  }
+
+  .opt-new-hero:before {
+    background: #cbe7ff url('//cdn.optimizely.com/img/124457272/0c569b6fefbc4322a69ee1ea9327f076.png') no-repeat center 5px;
+    background-size: 124%;
+    width: 100%;
+    content: "";
+    height: 76vw;
+    display: block;
+    position: absolute;
+    z-index: 0;
+  }
+
+  .opt-new-hero .wrapper { margin-top: 104px; }
+  
+  .opt-header {
+    padding: 40px 20px 0;
+    margin-bottom: 36px;
+    min-height: auto !important;
+  }
+
+  .opt-header h1 {
+    width: 65%; 
+    font-size: 1.8rem;
+    position: relative;
+  }
+
+  .opt-header.desktop p { display:none;  }
+
+  .opt-header.desktop { 
+    width: 100%; 
+    padding: 3px 20px;
+    margin-bottom: 0;
+    height: 70vw;
+  }
+
+  .opt-header ul { width: 60%;}
+
+  .homeContactForm label {
+    text-align: center; 
+  }
+  .opt-header.mobile { 
+    display: block; 
+    background-color: #cbe7ff;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 0;
+    text-align: center;
+    width:100%;
+  }
+  .opt-header.mobile h1{
+    color:#242079;
+    font-weight: normal;
+    text-transform: inherit;
+    font-size: 18px;
+    font-family: "proxima-nova", arial, sans-serif;
+    
+  }
+
+  .wrapper { width: 100%; }
+
+  .opt-header.mobile h2 {
+    
+    color: #252e82;
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: 600;
+  }
+
+  .opt-three-columns { 
+    float:none;
+    display: flex;
+    flex-direction: column;
+  } 
+
+  /* switching order of columns */
+  .column { 
+    width: 100% !important; 
+    display: flex;
+    flex-direction: column;
+  }
+  .centerInfoMap, 
+  .column.map-and-time .map .locationInfoMap { width: 100%; }
+  
+  .column.form {
+    order: 1;
+    margin-top: 0;
+  }
+
+  .column.map-and-time { 
+    order: 2; 
+    background-color: #FFF; 
+  }
+
+  .address {
+    margin: -10px auto 0;
+    background: transparent url(https://www.sylvanlearning.com/Sitefinity/WebsiteTemplates/SLTheme/App_Themes/SLTheme/images/starIcon.png) no-repeat scroll 10px center;
+  }
+
+  .column.map-and-time ul {
+    margin: 0 auto 20px;
+    width: 65%;
+  }
+
+  .time { background-color: #FFF; }
+
+  .column.description {
+    order: 3;
+    height: auto;
+    padding: 0 20px;
+    border-left: 0;
+    margin-left: 0;
+  }
+
+  .column.description p { font-size: 15px; }
+
+
+  .homeContactForm input#email { margin-bottom: 8px; }
+
+}
+
+/* tablet */ 
+@media (min-width: 768px) and (max-width: 1024px) { 
+  
+  .bannerContent {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .opt-header {  
+    padding: 30px 0 0 15px; 
+    margin-bottom: 110px;
+  }
+  
+  .column.form .contactForm { padding: 10px; }
+  .opt-new-hero .contactForm .submitContactForm { width: 100%; }
+
+} 
